@@ -45,7 +45,7 @@ def test_parse_nonexistent_file_as_raw():
     result = parse_input("nonexistent_file.md")
 
     # Since file doesn't exist, should fall back to raw
-    assert result["type"]   == "text"
+    assert result["type"]   == "text`"
     assert result["source"] == "raw_input"
 
 
